@@ -2,11 +2,11 @@ import env from "dotenv";
 env.config();
 import express from "express";
 import mongoose from "mongoose";
-import cors from "cors";
+// import cors from "cors";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
