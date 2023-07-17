@@ -20,7 +20,7 @@ app.use(allowCrossDomain);
 app.get("/",(req,res)=>{
     res.send("Hello world");
 })
-// mongoose.connect(process.env.URI,{useNewUrlParser:true});
+mongoose.connect(process.env.URI,{useNewUrlParser:true});
 
 // const userSchema = new mongoose.Schema({
 //     username:String,
